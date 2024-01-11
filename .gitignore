@@ -10,3 +10,11 @@ models/
 signal/runs/
 signal/models/
 __pycache__/
+signal/__pycache__/
+signal/runs/*
+signal/models/*
+__pycache__/*
+signal/__pycache__/*
+runs/
+runs/*
+
