@@ -6,7 +6,7 @@ from tqdm import tqdm
 from types import SimpleNamespace
 from torch import optim
 from utils import *
-from modules import UNet
+from modules.modules import UNet
 import wandb
 import argparse
 import logging

@@ -1,18 +1,20 @@
 import os
+import sys
+sys.path.insert(0, './modules/')
 import torch
 import torch.nn as nn
 from matplotlib import pyplot as plt
 from tqdm import tqdm
 from torch import optim
 from utils_cond import *
-from modules1D_cond import Unet1D, GaussianDiffusion1D
+from modules.modules1D_cond import Unet1D, GaussianDiffusion1D
 import logging
 from torch.utils.tensorboard import SummaryWriter
 from MITBIH import *
 from torch.utils import data
 
 logging.basicConfig(format="%(asctime)s - %(levelname)s: %(message)s", level=logging.INFO, datefmt="%I:%M:%S")
-data_path = "../heartbeat/mitbih_train.csv"
+data_path = "./heartbeat/mitbih_train.csv"
 
 # def train(args):
 #     setup_logging(args.run_name)

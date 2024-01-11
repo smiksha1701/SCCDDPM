@@ -5,5 +5,7 @@ datasets/
 results/
 signal/results/
 signal/heartbeat/
+models/*
 models/
+signal/runs/
 signal/models/

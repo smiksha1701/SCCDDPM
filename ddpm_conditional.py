@@ -17,7 +17,7 @@ from fastprogress import progress_bar
 
 import wandb
 from utils import *
-from modules import UNet_conditional, EMA
+from modules.modules import UNet_conditional, EMA
 
 torch.cuda.empty_cache()
 config = SimpleNamespace(    
